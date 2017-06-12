@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejercicio1 de la prueba12/06/2017</title>
+</head>
+<body>
+<!--Escriba un programa en JAvascript que imprima en consola los numeros del 1 al 100.
+para los multiplos de 3 imprima "Benito" en lugar del numero y para los multiplos de 5 
+imprima "Campeón". para los numeros multiplos de 3 y 5 imprima "Benito Campeón" -->
+<script type="text/javascript">
+
+ for (var i = 1; i == 100; i++) {
+  		if (i%3 ==0) {
+  			console.log("Benito");
+ 			if (i%5 ==0) {
+ 				console.log("Campeon");
+ 				if (i % 3 ==0 && i %5 ==0) {
+ 					console.log("Benito Campeon"); 				}
+ 			}
+ 		}
+ 	}	
+ 	
+</script>
+</body>
+</html>
