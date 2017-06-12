@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Author-->
+	<meta description="author">
+<!--Description-->
+	<meta description="">
+<!--Title-->
+	<title>ejercicio 2 de la prueba 12/06/2017</title>
+</head>
+<body>
+<!--Encabezado-->
+	<h1>Prueba de conocimiento</h1>
+<!--Párrafo-->
+	<p>esto es un ejemplo de parrafo</p>
+	<br>
+<!--Texto en negritas-->
+	<b>esto es una letra en negrilla</b>
+	<br>
+<!--Una tabla de 2 filas x 2 columnas-->
+	<table border="3" width="350">
+		 <tr>
+		 	<td>hola</td> <td>que tal</td>
+		 </tr>
+		 <tr>
+		 	<td>que mas</td> <td>oee mijo</td>
+		 </tr>
+	 </table>
+	 <br>
+<!--Un link a http://www.google.com-->
+	<a href="http://www.google.com">Ir a google</a>
+
+<!--Una instruccion de javascript que imprima "HOLA MUNDO"-->
+	<script type="text/javascript">
+		console.log("hola mundo");
+	</script>
+
+</body>
+</html>
