@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Tienda Online</title>
+	
+</head>
+<body>		
+
+			<h1>Los Motes de Benito - Tienda Online</h1><br>
+			<p>Cualquier plato a $50: Choclomote, con chicharron</p>
+
+		<table border="2">
+       <tr>
+       	<td>
+       		<img src="indice.jpg">
+       	</td>
+       	
+       	 
+        		<td>
+		       		<table width="100%" align="">
+		       		<form action="">
+		       			
+		       		
+		       			<tr>
+		       				<td align="rigth">
+		       				Nombre: 
+		       				<input id="nombre" size="30" type="text" ></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td>
+		       				# de choclomotes:
+		       				
+		       					 <input  id="numeroChoclo"  size="22"  type="text" onchange="calcular()" value="0"></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td align="rigth">
+		       				# de con chicharrón: 
+		       					<input id="numeroChicharon" size="20" type="text" onkeyup="calcular()" value="0"  ></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td align="rigth">
+		       				En cuantos minutos viene por su pedido: <input id="minutos" size="1" type="text"  ></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td align="rigth">
+		       				Subtotal: <input id="subtotal" size="30" type="text"></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td align="rigth">
+		       				IVA: <input id="iva" size="34"  type="text"></input>
+		       				</td>
+		       			</tr>
+		       			<tr>
+		       				<td align="rigth">
+		       				Total: 
+		       					<input id="total" size="33" type="text"></input>
+		       				</td>
+		       			</tr>
+
+		       			</form>
+		       	</table>
+       			
+       		</tr>
+      
+    </table>
+
+<script>
+function calcular() {
+	var u = 0.50;
+	var cho = document.getElementById("numeroChoclo").value;
+	var chi = document.getElementById("numeroChicharon").value;
+	 cho = parseInt(cho);
+	 chi = parseInt(chi);
+	 var l = cho + chi;
+	var t = l * u;
+	var subtotal = cho + chi;
+	document.getElementById("subtotal").value = t;
+	var i = t * 0.12;
+	document.getElementById("iva").value = i;
+	var s = i + t;
+	 document.getElementById("total").value = s;
+
+   
+}
+
+</script>
+</body>
+</html>
