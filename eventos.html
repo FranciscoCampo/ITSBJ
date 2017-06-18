@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>eventos</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function descripcion () {
+			alert("Sociedad Dportivo Quito");
+		}
+	</script>
+
+    <script type="text/javascript">
+		function apodo () {
+			alert("La AKD");
+		}
+	</script>
+
+	<script type="text/javascript">
+		function llama () {
+			alert("La nobleinstituciòn");
+		}
+	</script>
+
+	<script type="text/javascript">
+		function db () {
+			alert("Parrafo de texto");
+		}
+	</script>
+
+	<script type="text/javascript">
+		function fondo (color) {
+			document.bgColor= color;
+		}
+	</script>
+
+
+
+	<center>
+	<table border="2">
+		<tr>
+			<td><img src="FB_IMG_1491229530721.jpg" onmouseout="descripcion()" width="150" height="170"></td>
+		</tr>
+		<tr>	
+			<td><img src="FB_IMG_1491229530721.jpg" onmouseover="apodo()"  width="150" height="170"></td>
+		</tr>
+		<tr>
+			<td><img src="FB_IMG_1491229530721.jpg" ondblclick ="db()"  width="150" height="170"></td>
+		</tr>
+		<tr>	
+			<td><img src="FB_IMG_1491229530721.jpg" onmousemove="llama()"  width="150" height="170"></td>
+		</tr>
+
+	</table>
+	</center>
+
+
+    <center>
+    	<input type="button" value="rojo" onclick="fondo('red')" >
+    	<input type="button" value="azul" onclick="fondo('blue')">
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
