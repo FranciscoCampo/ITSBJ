@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Carrusel</title>
+	</head>
+ 	<body color ="#FFFFFF">
+ 		<h2 align="center">Carrusel de imagenes</h2>
+ 		<!--Creamos un tabla-->
+		<table width="40%" border="1" align="center">
+
+			<tr>
+			<td width="20%" align="right" height="200">
+				<font color="#0033CC"><b>
+					<a href="javascript:cambio(-1)">Atrás</a>
+					</b></font></td>
+			<td align="center" width="48%" height="247"><img id="centro" src="1.jpg" height="170"></td>
+			<td width="20%" height="200">
+				<font color="#0033CC"><b>
+				<a href="javascript:cambio(1)">Avance</a>
+				</b></font>
+			</td>
+			</tr>
+		</table>
+
+</body>
+<script type="text/javascript">
+	//Declaramos un array y asignamos los nombres de las imagenes
+	var lista = new Array('1.jpg', '2.jpg', '3.jpg' , '4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg');
+	//creamos variables y las inicializamos
+	var contador = 0;
+	//Declaramos una funcion para cambiar las imagenes
+	function cambio(sen)
+	{
+	contador+= sen;
+		console.log(contador);
+		if (contador ==lista.length)
+     		contador = lista.length-1;
+		else
+    		if (contador < 0) contador = 0;
+        		document.images.centro.src = lista[contador]
+				window.status="Imagen número "+contador;
+	}
+			
+</script>
+</html>
